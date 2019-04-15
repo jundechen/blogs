@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>www.chenjunde.com/categories/</loc>
+    <loc>chenjunde.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>www.chenjunde.com/</loc>
+    <loc>chenjunde.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>www.chenjunde.com/tags/</loc>
+    <loc>chenjunde.com/tags/</loc>
     <priority>0</priority>
   </url>
   
