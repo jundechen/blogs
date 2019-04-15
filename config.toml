@@ -1,0 +1,5 @@
+baseURL = "http://chenjunde.com/"
+languageCode = "en-us"
+title = "Johnny Chen"
+theme = "berbera"
+publishDir = "docs"

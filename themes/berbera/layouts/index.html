@@ -1,0 +1,164 @@
+{{ define "main" }}
+<main>
+    <div class="homepage">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>
+                    <span class="minor_line">技术知识点滴速记</span>
+                    <br>
+                    <span class="major_line">关于数据科学 &amp; 人工智能</span>
+                    <br>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 blurb">
+                <p>
+                    <a href="https://chenjunde.com/about/johnny_chen/">我是一名软件工程人员，专注于人工智能技术在金融领域的应用解决方案。</a> 目前工作于
+                    <a href="http://www.chinasofti.com/">中软国际科技服务有限公司</a>, 带领解决方案交付团队给外资金融机构提供基于AI 和 云的解决方案.</p>
+            </div>
+        </div>
+
+        <div class="row" id="ai_foundation">
+            <div class="col-sm-12">
+                <h3 class="category_header">人工智能编程基础</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">向量，矩阵和数组</h4>
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/ai_foundation/vectors_matrices_and_arrays/").Reverse }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="machine_learning">
+            <div class="col-sm-12">
+                <h3 class="category_header">机器学习</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">监督学习</h4>
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/machine_learning/supervised_learning/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="python">
+            <div class="col-sm-12">
+                <h3 class="category_header">Python</h3>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">Python基础</h4>
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/python/basics/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="row" id="deep_learning">
+            <div class="col-sm-12">
+                <h3 class="category_header">深度学习</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h4 class="card-header">神经网络</h4>
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/deep_learning/neural_network/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="mathematics">
+            <div class="col-sm-12">
+                <h3 class="category_header">数学知识</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/mathematics/liner_agelbra/").ByTitle }}
+                            <li>
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="articles">
+            <div class="col-sm-12">
+                <h3 class="category_header">文章</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="article_list card-body">
+                        <ul>
+                            {{ range (where .Pages "File.Dir" "in" "/articles/") }}
+                            <li>
+                                {{ .PublishDate.Format "Jan 2006" }} -
+                                <a href="{{.Permalink}}">{{.Title}}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+{{ end }}
