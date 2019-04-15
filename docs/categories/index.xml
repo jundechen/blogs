@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Johnny Chen</title>
-    <link>http://chenjunde.com/categories/</link>
+    <link>www.chenjunde.com/categories/</link>
     <description>Recent content in Categories on Johnny Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://chenjunde.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="www.chenjunde.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
